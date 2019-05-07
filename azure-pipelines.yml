@@ -11,6 +11,10 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 steps:
+- task: SonarQubePrepare@4
+  inputs:
+    SonarQube: '11b7a636-8cc8-4b9c-ac1f-852cc7de1401'
+    scannerMode: 'Other'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
@@ -22,7 +26,4 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- task: SonarQubePrepare@4
-  inputs:
-    SonarQube: '11b7a636-8cc8-4b9c-ac1f-852cc7de1401'
-    scannerMode: 'Other'
+
