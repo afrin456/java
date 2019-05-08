@@ -49,12 +49,12 @@
   </build>
 <repositories>
     <repository>
-      <id>teamNexus</id>
-      <url>http://public_artifacts_server:8081/nexus/content/repositories/releases</url>
+      <id>maven-releases</id>
+      <url>http://vmachine.southindia.cloudapp.azure.com:8081/repository/maven-releases/</url>
     </repository>
     <repository>
-      <id>teamNexus.snapshots</id>
-      <url>http://public_artifacts_server:8081/nexus/content/repositories/snapshots</url>
+      <id>maven-snapshots</id>
+      <url>http://vmachine.southindia.cloudapp.azure.com:8081/repository/maven-snapshots/</url>
       <releases>
         <enabled>false</enabled>
       </releases>
