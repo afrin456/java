@@ -51,11 +51,11 @@
 <repositories>
     <repository>
       <id>maven-releases</id>
-      <url>http://vmachine.southindia.cloudapp.azure.com:8081/repository/maven-releases/</url>
+      <url>http://vmachine.southindia.cloudapp.azure.com:8081/repository/maven-releases</url>
     </repository>
     <repository>
       <id>maven-snapshots</id>
-      <url>http://vmachine.southindia.cloudapp.azure.com:8081/repository/maven-snapshots/</url>
+      <url>http://vmachine.southindia.cloudapp.azure.com:8081/repository/maven-snapshots</url>
       <releases>
         <enabled>false</enabled>
       </releases>
