@@ -28,14 +28,5 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: nexusArtifactUpload@0
-  inputs:
-    serverEndpoint: 'Nexus'
-    repositoryId: 'nexus'
-    groupId: 'helloworld'
-    artifactId: 'helloworld'
-    artifactVersion: '1.0-SNAPSHOT'
-    packaging: 'war'
-    fileName: '/home/vsts/work/1/s/target/helloworld.war'
-    classifier: '$(Build.BuildId)'
+
 
