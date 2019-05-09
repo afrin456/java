@@ -10,7 +10,9 @@ trigger:
 
 pool:
   vmImage: 'Ubuntu-16.04'
-
+variables:
+  dockerId: afrin123 # Replace with your Docker ID for Docker Hub or the admin user name for the Azure Container Registry
+  imageName: new
 steps:
 - task: SonarQubePrepare@4
   inputs:
@@ -28,5 +30,8 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-
+- script: |
+    docker build -t $(dockerId)/$(imageName) .
+    docker login -u $(dockerId) -p hello123
+    docker push $(dockerId)/$(imageName)
 
