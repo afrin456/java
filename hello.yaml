@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: hworld-dep
+ labels:
+  app: hworld
+spec:
+ replicas: 2
+ selector:
+  matchLabels:
+   app: hworld
+ template:
+  metadata:
+   labels:
+    app: hworld
+  spec:
+   containers:
+   - name: hworld
+     image: docker.io/afrin123/afrin:109
+     ports:
+     - containerPort: 8080
