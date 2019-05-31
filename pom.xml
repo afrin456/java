@@ -67,25 +67,6 @@
 
     </distributionManagement>
 
-<repositories>
-    <repository>
-      <id>maven-releases</id>
-      <url>http://vmachine.southindia.cloudapp.azure.com:8081/repository/maven-releases</url>
-    </repository>
-    <repository>
-      <id>maven-snapshots</id>
-      <url>http://vmachine.southindia.cloudapp.azure.com:8081/repository/maven-snapshots</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
+
 	
 </project>
