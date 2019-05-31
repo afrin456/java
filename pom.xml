@@ -26,14 +26,7 @@
 
 
               </repository>
-              <snapshotRepository>
-                     <id>nexus</id>
-                     <name>Snapshot</name>
-                    <url>http://vmachine.southindia.cloudapp.azure.com:8081/repository/maven-snapshots</url>
-
-
-                      </snapshotRepository>
-
+            
 
     </distributionManagement>
 
